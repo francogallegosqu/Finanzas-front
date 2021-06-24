@@ -12,7 +12,7 @@ export class TokenInterceptorService {
   private _token:any;
   constructor(private http:HttpClient) {
     this._usuario=new Usuario();
-    this._token='';
+    // this._token='';
     
    }
 
@@ -101,6 +101,19 @@ export class TokenInterceptorService {
   //   }
   //   return false;
   // }
+
+  getToken():any{
+    let sessioStr:any =sessionStorage.getItem('token')
+    this._token = JSON.parse(sessioStr);
+    return this._token.username;
+
+  }
+  getTokenId():any{
+    let sessioStr:any =sessionStorage.getItem('token')
+    this._token = JSON.parse(sessioStr);
+    return this._token.user_id;
+
+  }
 
   register(usuario:Usuario):Observable<any>{
     

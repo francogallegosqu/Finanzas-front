@@ -12,6 +12,8 @@ import { LoginComponent } from './usuarios/login/login.component';
 import { RegisterComponent } from './usuarios/register/register.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { CreateStartupComponent } from './startup/create-startup/create-startup.component';
+import { ListarStartupComponent } from './startup/listar-startup/listar-startup.component';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { FooterComponent } from './footer/footer.component';
     LoginComponent,
     RegisterComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    CreateStartupComponent,
+    ListarStartupComponent
   ],
   imports: [
     BrowserModule,

@@ -31,6 +31,7 @@ export class LoginComponent implements OnInit {
       // this.authService.guardarUsuario(response);
       // this.authService.guardarToken(response);
       // let usuario = this.authService.usuario;
+      console.log("usuario",this.authService.getToken())
       this.router.navigate(['/']);
     },
     err =>{
@@ -38,6 +39,8 @@ export class LoginComponent implements OnInit {
         console.log("error de login")
       }
     });
+    
+
   }
 
 }
