@@ -1,4 +1,76 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<!-- Bootstrap Static Header -->
+<nav class="navbar navbar-expand-lg navbar-white bg-white">
+    
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/directivas">Directivas</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/clientes']">Clientes</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav navbar-right ">
+      <li *ngIf="!authService.isAuthenticated()"><div class="option-imagen ">
+        <img src="./assets/perfil-icon.png" alt=""><a [routerLink]="['/login']" class=" ml-3 btn btn-outline-primary">Sign In</a></div>
+        
+    </li>
+
+      <li *ngIf="authService.isAuthenticated()" class="dropdown">
+        <a class="btn btn-outline-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          {{authService.getToken()}}
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+           <button (click)="logout()" class="dropdown-item" type="submit">Sign Out</button>
+        </div>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav navbar-right ">
+      <li *ngIf="!authService.isAuthenticated()">
+        <a [routerLink]="['/register']"  class=" ml-3 btn btn-outline-primary">Sign UP</a>
+        
+    </li>
+
+    </ul>
+    
+
+  </div>
+</nav>
+<div style="background: url(https://i.postimg.cc/3N7wnb75/background.jpg)" class="jumbotron bg-cover text-white">
+  
+  <div class="container py-5 text-center">
+    
+      <h1 class="display-4 font-weight-bold">Invierte en los Mejores Emprendedores</h1>
+      <p class="font-italic mb-0">Using simple jumbotron-style component, create a nice Bootstrap 4 header with a background image.</p>
+      <p class="font-italic">Snippe by
+          <a href="https://bootstrapious.com" class="text-white">
+              <u>Bootstrapious</u>
+          </a>
+      </p>
+      <a href="#" role="button" class="btn btn-primary px-5">See All Features</a>
+      
+  </div>
+</div>
+
+<!-- For Demo Purpose -->
+<div class="container py-5">
+  <h2 class="h3 font-weight-bold text-center">Empieza ya!!!</h2>
+ 
+</div>
+  
+  
+  
+<!--  }}}}}}}}}}}}}}}}}}}}-->
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -31,4 +103,4 @@
       </ul>
     </div>
   </nav>
-  
+   -->
