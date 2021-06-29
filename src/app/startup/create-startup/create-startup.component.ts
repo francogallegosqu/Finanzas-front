@@ -14,10 +14,11 @@ export class CreateStartupComponent implements OnInit {
   constructor(public httpStartup:StartupService,private authService:TokenInterceptorService) { }
 
   ngOnInit(): void {
-    this.startup.userId=this.authService.getTokenId()
+    
   }
 
   createStarup(){
+    this.startup.userId=this.authService.getTokenId()
     this.httpStartup.createStartup(this.startup).subscribe(response=>
       console.log(response))
     // console.log(this.startup)

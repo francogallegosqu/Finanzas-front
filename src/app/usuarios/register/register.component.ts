@@ -18,8 +18,13 @@ export class RegisterComponent implements OnInit {
   ngOnInit(): void {
   }
   register():void{
-    console.log(this.usuario);
-    this.authService.register(this.usuario).subscribe(response=>console.log(response));
+    // console.log(this.usuario);
+    // this.authService.register(this.usuario).subscribe(response=>{
+    //   console.log(response)
+    //   this.router.navigate(['/login']);
+    // });
+
+    this.router.navigate(['/login']);
   }
 
 }

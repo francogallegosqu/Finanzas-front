@@ -1,1 +1,16 @@
-<p>listar-startup works!</p>
+
+
+
+
+<div class="d-flex flex-wrap">
+<div *ngFor="let s of startups" class="card" style="width: 18rem;"
+[routerLink]="['/dashboard/startup/',s.id]">
+    <img class="card-img-top" src="{{s.photo}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{s.name}}</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div>
+</div> 
+

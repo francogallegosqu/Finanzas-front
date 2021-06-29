@@ -1,0 +1,65 @@
+<div>
+  <a routerLink="create-startup">create startup</a>
+</div>
+<div>
+  <a routerLink="listar-startup">listar startup</a>
+</div>
+<div>
+  <a [routerLink]="['/login']" routerLinkActive="activa"> Login</a>
+</div>
+<div>
+  <a [routerLink]="['/register']" routerLinkActive="activa"> Register</a>
+</div>
+
+<div class="container-menu">
+                
+    <div class="container-wallet">
+        <p>Balance</p>
+        <p id="wallet-price">s./ 12 367.00</p>
+    </div>
+
+    <div class="container-options">
+        <a href="#" class="a-desing">
+            <div class="option">
+                <div class="option-imagen">
+                    <img src="./assets/maletin.png" alt="">
+                </div>
+                <div class="option-texto">
+                    <a routerLink="create-startup">Crea Tu Startup</a>
+                    
+                </div>
+            </div>
+        </a>
+        <a href="#" class="a-desing">
+            <div class="option">
+                <div class="option-imagen">
+                    <img src="./assets/startup-icon.png" alt="">
+                </div>
+                <div class="option-texto">
+                    <a routerLink="listar-startup">Startups</a>
+                    
+                </div>
+            </div>
+        </a>
+        <a href="#" class="a-desing">
+            <div class="option">
+                <div class="option-imagen">
+                    <img src="./assets/perfil-icon.png" alt="">
+                </div>
+                <div class="option-texto">
+                    <p>Perfil</p>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="a-desing">
+            <div class="option">
+                <div class="option-imagen">
+                    <img src="./assets/engranaje-icon.png" alt="">
+                </div>
+                <div class="option-texto">
+                    <p>Configuraciones</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>

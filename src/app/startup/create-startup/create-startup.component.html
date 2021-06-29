@@ -1,4 +1,42 @@
-<div class="card border-primary text-center">
+<main>
+  <div class="container-box"> 
+      <div class="left-side">
+          <div class="title">
+              <h1>STARTUP <br>INVEST</h1>
+          </div>
+          <div class="text-center">
+              <img src="./assets/Enterprises.png" class="img-home">
+          </div>
+      </div>
+
+
+      <div class="right-side">
+          <div class="up-part">
+            <form method="post">
+              <div class="form-group col-lg12">
+                <input [(ngModel)]="startup.name" type="text" class="form-control"
+                name="username" id="username" placeholder="name" autofocus required>
+              </div>
+        
+              <div class="form-group col-lg12">
+                <input [(ngModel)]="startup.description" type="text" class="form-control"
+                name="password" id="password" placeholder="description" required>
+              </div>
+              <div class="form-group col-lg12">
+                  <input [(ngModel)]="startup.photo" type="text" class="form-control"
+                  name="password" id="password" placeholder="photo" required>
+                </div>
+        
+              <div class="form-group col-lg12">
+                <input (click)='createStarup()' type="submit" class="btn btn-lg btn-primary btn-block" value="Login">
+              </div>
+            </form>
+          </div>
+      </div>
+  </div>
+</main>
+
+<!-- <div class="card border-primary text-center">
     
     <div class="card-body">
   
@@ -22,4 +60,4 @@
         </div>
       </form>
     </div>
-  </div>
+  </div> -->

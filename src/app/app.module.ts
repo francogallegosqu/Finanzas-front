@@ -14,6 +14,9 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CreateStartupComponent } from './startup/create-startup/create-startup.component';
 import { ListarStartupComponent } from './startup/listar-startup/listar-startup.component';
+import { VerticalComponent } from './vertical/vertical.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { DetalleStartupComponent } from './detalle-startup/detalle-startup.component';
 
 
 @NgModule({
@@ -24,7 +27,10 @@ import { ListarStartupComponent } from './startup/listar-startup/listar-startup.
     HeaderComponent,
     FooterComponent,
     CreateStartupComponent,
-    ListarStartupComponent
+    ListarStartupComponent,
+    VerticalComponent,
+    DashboardComponent,
+    DetalleStartupComponent
   ],
   imports: [
     BrowserModule,

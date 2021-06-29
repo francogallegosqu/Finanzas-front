@@ -1,4 +1,5 @@
 export class Startup {
+    id:number;
     name:string;
     description:string;
     photo:string;
@@ -8,6 +9,7 @@ export class Startup {
         this.description='';
         this.photo='';
         this.userId=0;
+        this.id=0;
     }
    }
    
