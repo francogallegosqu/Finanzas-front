@@ -20,7 +20,7 @@
 
     <div class="container-options">
         <a href="#" class="a-desing">
-            <div class="option">
+            <div class="option" *ngIf="authService.isAuthenticated()">
                 <div class="option-imagen">
                     <img src="./assets/maletin.png" alt="">
                 </div>

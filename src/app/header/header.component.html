@@ -14,8 +14,9 @@
         <a class="nav-link" routerLink="/directivas">Directivas</a>
       </li>
       <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" [routerLink]="['/clientes']">Clientes</a>
+        <a class="nav-link" href="https://alvarorrp.github.io/LPFinanzas/">Landing Page</a>
       </li>
+      
     </ul>
     <ul class="navbar-nav navbar-right ">
       <li *ngIf="!authService.isAuthenticated()"><div class="option-imagen ">
@@ -24,13 +25,17 @@
     </li>
 
       <li *ngIf="authService.isAuthenticated()" class="dropdown">
+        <div class="option-imagen">
+          
+        
         <a class="btn btn-outline-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          {{authService.getToken()}}
-        </a>
-
+          <img src="./assets/franco.jpg" alt=""> {{authService.getToken()}}
+        </a> 
+      
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
            <button (click)="logout()" class="dropdown-item" type="submit">Sign Out</button>
         </div>
+      </div>
       </li>
     </ul>
 
@@ -45,7 +50,7 @@
 
   </div>
 </nav>
-<div style="background: url(https://i.postimg.cc/3N7wnb75/background.jpg)" class="jumbotron bg-cover text-white">
+<div  style="background: url(./assets/Fondo-egistro-standard-scale-4_00x-gigapixel.jpg);"  class="jumbotron bg-cover text-white">
   
   <div class="container py-5 text-center">
     
@@ -61,12 +66,7 @@
   </div>
 </div>
 
-<!-- For Demo Purpose -->
-<div class="container py-5">
-  <h2 class="h3 font-weight-bold text-center">Empieza ya!!!</h2>
- 
-</div>
-  
+
   
   
 <!--  }}}}}}}}}}}}}}}}}}}}-->

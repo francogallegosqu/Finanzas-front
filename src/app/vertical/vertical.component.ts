@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { TokenInterceptorService } from '../usuarios/token-interceptor.service';
 
 @Component({
   selector: 'app-vertical',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VerticalComponent implements OnInit {
 
-  constructor() { }
+  constructor(public authService: TokenInterceptorService, private router: Router) { }
 
   ngOnInit(): void {
   }
