@@ -4,6 +4,7 @@ export class Startup {
     description:string;
     photo:string;
     userId:number;
+	
     constructor(){
         this.name='';
         this.description='';

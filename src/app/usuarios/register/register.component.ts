@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TokenInterceptorService } from '../token-interceptor.service';
-import { Usuario } from '../usuario';
+import { Usuario } from '../../models/user';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-register',
