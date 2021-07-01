@@ -18,6 +18,7 @@ import { VerticalComponent } from './vertical/vertical.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DetalleStartupComponent } from './detalle-startup/detalle-startup.component';
 import { InvestmentComponent } from './investment/investment.component';
+import { MisStartupComponent } from './mis-startup/mis-startup.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { InvestmentComponent } from './investment/investment.component';
     VerticalComponent,
     DashboardComponent,
     DetalleStartupComponent,
-    InvestmentComponent
+    InvestmentComponent,
+    MisStartupComponent
   ],
   imports: [
     BrowserModule,

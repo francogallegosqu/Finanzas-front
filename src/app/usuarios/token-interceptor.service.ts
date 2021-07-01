@@ -105,13 +105,13 @@ export class TokenInterceptorService {
   getToken():any{
     let sessioStr:any =sessionStorage.getItem('token')
     this._token = JSON.parse(sessioStr);
-    return this._token.username;
+    return this._token.fullName;
 
   }
   getTokenId():any{
     let sessioStr:any =sessionStorage.getItem('token')
     this._token = JSON.parse(sessioStr);
-    return this._token.user_id;
+    return this._token.id;
 
   }
 

@@ -24,6 +24,7 @@ export class CreateStartupComponent implements OnInit {
       console.log(response))
     // console.log(this.startup)
     this.router.navigate(['/dashboard/listar-startup']);
+    console.log(this.startup)
   }
 
 }

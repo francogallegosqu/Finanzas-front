@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DetalleStartupComponent } from './detalle-startup/detalle-startup.component';
 import { InvestmentComponent } from './investment/investment.component';
+import { MisStartupComponent } from './mis-startup/mis-startup.component';
 import { CreateStartupComponent } from './startup/create-startup/create-startup.component';
 import { ListarStartupComponent } from './startup/listar-startup/listar-startup.component';
 import { LoginComponent } from './usuarios/login/login.component';
@@ -24,6 +25,7 @@ const routes: Routes = [
     {path:'startup/:startupId',component:DetalleStartupComponent,children:[
       {path:'investment',component:InvestmentComponent}
     ]},
+    {path:'miStartup',component:MisStartupComponent}
     
     
   ]},

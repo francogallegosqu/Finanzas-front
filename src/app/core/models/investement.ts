@@ -1,17 +1,17 @@
 export class Investment{
     userId:number;
     startupId:number;
-    
-    amount:number;
-    
-    numInstallments:number;
+    amount:string;
+    years:number;
+    period:string
+    paymentType:string;
     constructor(){
         this.userId=0;
         this.startupId=0;
-        
-        this.amount=0;
-        
-        this.numInstallments=0;
+        this.amount=''
+        this.years=0;
+        this.period=''
+        this.paymentType='';
 
     }
 }

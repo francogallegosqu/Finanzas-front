@@ -18,8 +18,8 @@ export class StartupService {
   }
 
   listarStartup():Observable<any>{
-    console.log("llamando a rest:"+this.urlBase+'startup');
-    return this.http.get(this.urlBase+'startup').pipe(
+    console.log("llamando a rest:"+this.urlBase+'startup/');
+    return this.http.get(this.urlBase+'startup/').pipe(
       map(response=>response as Startup[])
     );
 

@@ -38,7 +38,9 @@ export class ListarStartupComponent implements OnInit {
   reloadData(){
     console.log("reload!")
     this.startupService.listarStartup()
-    .subscribe(startups=> this.startups=startups)
+    .subscribe(startups=>{ this.startups=startups
+    })
+    
   }
 
 }
