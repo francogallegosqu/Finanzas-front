@@ -9,9 +9,14 @@ import { TokenInterceptorService } from '../usuarios/token-interceptor.service';
 })
 export class VerticalComponent implements OnInit {
 
+  balance:any
   constructor(public authService: TokenInterceptorService, private router: Router) { }
 
   ngOnInit(): void {
+    this.authService.getBalanceService()
+    .subscribe(response => this.balance= response.balance)
+    // console.log(this.balance)
   }
+
 
 }

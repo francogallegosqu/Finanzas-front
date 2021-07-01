@@ -108,6 +108,12 @@ export class TokenInterceptorService {
     return this._token.fullName;
 
   }
+  getBalance():any{
+    let sessioStr:any =sessionStorage.getItem('token')
+    this._token = JSON.parse(sessioStr);
+    return this._token.balance;
+
+  }
   getTokenId():any{
     let sessioStr:any =sessionStorage.getItem('token')
     this._token = JSON.parse(sessioStr);
@@ -128,6 +134,13 @@ export class TokenInterceptorService {
     
     return this.http.post<any>(urlEndpoint,usuario,httpOptions);
   }
+  getBalanceService():Observable<any>{
+    const urlEndpoint = 'http://startupinvest.herokuapp.com/api/account/id/';
+    return this.http.get(urlEndpoint+this.getTokenId()).pipe(
+      map(response=>response as Usuario)
+    );
+  }
+
 
   logout(): void {
     this._token = null;

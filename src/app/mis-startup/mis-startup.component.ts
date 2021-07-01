@@ -27,6 +27,7 @@ export class MisStartupComponent implements OnInit {
     this.installmentService.getInstallment(id)
     .subscribe(response=> {
       // this.installment=response
+      this.installment = response
       console.log(response)
     }
     )
