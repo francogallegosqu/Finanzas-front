@@ -31,9 +31,9 @@ export class InvestmentComponent implements OnInit {
 
 	createInvestment(){
 		this.investment.userId=this.authService.getTokenId()
-		this.investment.startupId = this.id_startup
+		this.investment.startupId = this.variable_id
 
-		
+		console.log(this.investment)
 
 		this.httpInvestment.createInvestment(this.investment)
 			.subscribe(response => {
