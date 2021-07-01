@@ -17,14 +17,28 @@
   -->
 <!-- </div> -->
 
-<h2>holaaaaaaaaaaaaaaaa</h2>
-<div>
-  <ul>
-    <li *ngFor="let i of this.installment"> {{i.amount}}</li>
-  </ul>
-</div>
+<h1>Lista de cuotas a pagar</h1>
 
-<div class="left-side-dashboard" *ngFor="let s of installment">
-  <p>{{s.amount}}</p>
-</div>
+<div class="card-header">Productos</div>
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th>codigo</th>
+                <th>nombre</th>
+                <th>descripcion</th>
+                <th>precio</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr  *ngFor="let s of installment">
+                <th>{{s.id}}</th>
+                <th>{{s.payDate}}</th>
+                <th>{{s.amount}}</th>
+                <th>{{s.paid}}</th>
+                
 
+            </tr>
+        </tbody>
+
+    </table>
