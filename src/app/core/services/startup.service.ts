@@ -8,7 +8,7 @@ import  { Startup } from 'src/app/core/models/startup';
 })
 export class StartupService {
 
-  private urlBase = 'http://startupinvest.herokuapp.com/api/startup';
+  private urlBase = 'http://startupinvest.herokuapp.com/api/startup/';
   private httpHeaders = new HttpHeaders({'Content-type' : 'application/json'});
   constructor(private http: HttpClient) { }
 
@@ -18,7 +18,11 @@ export class StartupService {
   }
 
   listarStartup():Observable<any>{
+<<<<<<< HEAD
     console.log("llamando a rest:"+this.urlBase+'startup');
+=======
+    console.log("llamando a rest:"+this.urlBase);
+>>>>>>> 64723272e2063e668163e4d3f69baf4ed61637b1
     return this.http.get(this.urlBase).pipe(
       map(response=>response as Startup[])
     );
@@ -27,8 +31,10 @@ export class StartupService {
 
   getStartupById(id:number):Observable<any>{
     console.log("entrando a get Startup")
-    return this.http.get(this.urlBase+'/id/'+id).pipe(
+    return this.http.get(this.urlBase+'id/'+id).pipe(
       map(response=> response as Startup)
     )
   }
+
+  
 }

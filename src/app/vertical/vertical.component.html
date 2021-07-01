@@ -41,7 +41,7 @@
                 </div>
             </div>
         </a>
-        <a href="#" class="a-desing">
+        <a href="#" *ngIf="!authService.isAuthenticated()"  class="a-desing">
             <div class="option">
                 <div class="option-imagen">
                     <img src="./assets/perfil-icon.png" alt="">
@@ -68,7 +68,7 @@
                     <img src="./assets/engranaje-icon.png" alt="">
                 </div>
                 <div class="option-texto">
-                    <a routerLink="investment">Mis Startup</a>
+                    <a routerLink="miStartup">Mis Startup</a>
                 </div>
             </div>
         </a>

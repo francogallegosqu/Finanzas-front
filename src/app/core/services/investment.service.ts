@@ -4,6 +4,7 @@ import { User, UserJson, CreateUser, Login, UserResponse } from 'src/app/core/mo
 import { map } from 'rxjs/operators';
 import { Investment } from '../models/investement';
 import { Observable } from 'rxjs';
+import { Installment } from '../models/installment';
 @Injectable({
   providedIn: 'root'
 })
@@ -15,6 +16,12 @@ export class InvestmentService {
   createInvestment(investment:Investment):Observable<Object>{
     return this.http.post(this.urlBase+'investment/',investment,
     {headers:this.httpHeaders})
+  }
+
+  getInstallment(id:number):Observable<any>{
+    return this.http.get(this.urlBase+'installment/user/'+id).pipe(
+      map(response=> response as Installment[])
+    )
   }
 
   
