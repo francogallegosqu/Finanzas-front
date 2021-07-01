@@ -8,7 +8,7 @@ import  { Startup } from 'src/app/core/models/startup';
 })
 export class StartupService {
 
-  private urlBase = 'http://127.0.0.1:8000/api/';
+  private urlBase = 'http://startupinvest.herokuapp.com/';
   private httpHeaders = new HttpHeaders({'Content-type' : 'application/json'});
   constructor(private http: HttpClient) { }
 

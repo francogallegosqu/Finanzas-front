@@ -1,5 +1,26 @@
-<p>detalle-startup works!</p>
 
+<h1>¡¡TU EMPRENDIMIENTO ESTA AQUI!!</h1>
 <div>
     <h2>{{startup.name}}</h2>
 </div>
+
+<div class="container-sides-dashboard d-flex flex-wrap">
+  
+    <div class="left-side-dashboard" >
+        
+        <div class="card " style="width: 15rem;">
+            <img src="{{startup.photo}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{startup.name}}</h5>
+              <p class="card-text">{{startup.description}}</p>
+              <a href="#" class="btn btn-primary">¡Saber más!</a>
+            </div>
+        </div>
+        
+        
+    </div>
+   
+  </div>
+  
+
+<app-investment ></app-investment>

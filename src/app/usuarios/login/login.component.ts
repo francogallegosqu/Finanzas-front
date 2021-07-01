@@ -33,7 +33,8 @@ export class LoginComponent implements OnInit {
 	this.userService.login(this.loginUser)
 		.subscribe(response => {
 			console.log(response)
-			//this.router.navigate(['/']);
+			sessionStorage.setItem('token',JSON.stringify(response));
+			this.router.navigate(['/']);
 	},
 	err =>{
 		if (err.status == 400){

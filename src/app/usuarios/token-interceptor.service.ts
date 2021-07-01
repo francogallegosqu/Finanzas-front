@@ -50,9 +50,9 @@ export class TokenInterceptorService {
     
     return this.http.post<any>(urlEndpoint, usuario,httpOptions).pipe(
       map(user =>{
-        if(user && user.token){
+        
           sessionStorage.setItem('token',JSON.stringify(user));
-        }
+        
       })
     );
   }
