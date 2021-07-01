@@ -1,6 +1,6 @@
 import { HttpClient,HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Usuario } from '../models/user';
+import { Usuario } from '../core/models/user';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 @Injectable({
