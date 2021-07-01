@@ -7,7 +7,7 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class UserService {
-	private path: string = "http://startupinvest.herokuapp.com/account";
+	private path: string = "http://startupinvest.herokuapp.com/api/account";
 
 	constructor(
 		private http:HttpClient,

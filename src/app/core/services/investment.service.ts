@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class InvestmentService {
-  private urlBase = 'http://startupinvest.herokuapp.com/';
+  private urlBase = 'http://startupinvest.herokuapp.com/api/';
   private httpHeaders = new HttpHeaders({'Content-type' : 'application/json'});
   constructor(private http:HttpClient) { }
 
