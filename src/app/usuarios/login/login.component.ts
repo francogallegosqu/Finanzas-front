@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { TokenInterceptorService } from '../token-interceptor.service';
 import { Login, Usuario } from '../../models/user';
 import { Router } from '@angular/router';
-import { UserService } from 'src/app/servicios/user.service';
+import { UserService } from 'src/app/core/services/user.service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',

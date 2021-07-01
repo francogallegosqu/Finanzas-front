@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Startup } from 'src/app/models/startup';
-import { StartupService } from 'src/app/servicios/startup.service';
+import { StartupService } from 'src/app/core/services/startup.service';
 import { TokenInterceptorService } from 'src/app/usuarios/token-interceptor.service';
 
 @Component({
