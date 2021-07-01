@@ -13,17 +13,27 @@
         <div class="right-side">
             <div class="up-part">
               <form method="post">
+
                 <div class="form-group col-lg12">
                   <input [(ngModel)]="investment.amount" type="number" class="form-control"
-                  name="username" id="username" placeholder="Monto" autofocus required>
+                  name="Monto" id="Monto" placeholder="Monto" autofocus required>
                 </div>
           
                 <div class="form-group col-lg12">
-                  <input [(ngModel)]="investment.paymentType" type="number" class="form-control" 
-                  name="password" id="password" placeholder="Numero cuotas" required>
+                  <input [(ngModel)]="investment.years" type="number" class="form-control" 
+                  name="Años" id="Años" placeholder="Años" required>
                 </div>
-                
-          
+
+				<div class="form-group col-lg12">
+					<input [(ngModel)]="investment.period" type="text" class="form-control" 
+					name="Periodo" id="Periodo" placeholder="Periodo" required>
+				</div>
+
+				<div class="form-group col-lg12">
+					<input [(ngModel)]="investment.paymentType" type="number" class="form-control" 
+					name="Tipo" id="Tipo" placeholder="Tipo de pago" required>
+				</div>
+
                 <div class="form-group col-lg12">
                   <input (click)='createInvestment()' type="submit" class="btn btn-lg btn-primary btn-block" value="Crear Investment">
                 </div>
